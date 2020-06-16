@@ -1,0 +1,116 @@
+@import './base';
+
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-table {
+        --size: 40rem;
+        width: var(--size);
+        height: var(--size);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .container-index {
+            flex-basis: 33%;
+            height: 33%;
+
+            .btn-click {
+                font-size: 3rem;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                border: none;
+                color: #fff;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .btn-click:hover {
+                opacity: 0.8;
+            }
+
+            .btn-click:active {
+                background-color: #fff;
+                color: #333;
+            }
+        }
+
+        // table{
+        //     width: 400px;
+        //     height: 400px;
+        //     border-collapse: collapse;
+        // }
+    }
+}
+
+// table {
+//     tr {
+//         td {
+//             button {
+//                 width: 100%;
+//                 height: 100%;
+//                 cursor: pointer;
+//                 font-size: 30px;
+//                 background: #000;
+//                 color: #fff;
+//                 border: none;
+//                 outline: none;
+//             }
+
+//             button:active {
+//                 background-color: #fff;
+//                 color: #333;
+//             }
+//         }
+//     }
+// }
+
+#overlay {
+    // cursor: not-allowed;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    .overlay-title {
+        font-size: 3rem;
+        line-height: 4.6rem;
+        color: #fff;
+        padding-bottom: 2rem;
+    }
+
+    .overlay-btn {
+        font-size: 3rem;
+        padding: 1.4rem 2.4rem;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .overlay-btn:hover {
+        background-color: #fafafa;
+        border-color: #000;
+        color: #333;
+        transition: all ease-in 0.2s;
+    }
+}

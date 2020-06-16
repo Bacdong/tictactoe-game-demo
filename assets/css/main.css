@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .container-table {
+  --size: 40rem;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app .container-table .container-index {
+  flex-basis: 33%;
+  height: 33%;
+}
+
+.app .container-table .container-index .btn-click {
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.app .container-table .container-index .btn-click:hover {
+  opacity: 0.8;
+}
+
+.app .container-table .container-index .btn-click:active {
+  background-color: #fff;
+  color: #333;
+}
+
+#overlay {
+  position: relative;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#overlay .overlay-title {
+  font-size: 3rem;
+  line-height: 4.6rem;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+#overlay .overlay-btn {
+  font-size: 3rem;
+  padding: 1.4rem 2.4rem;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#overlay .overlay-btn:hover {
+  background-color: #fafafa;
+  border-color: #000;
+  color: #333;
+  transition: all ease-in 0.2s;
+}
