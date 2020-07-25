@@ -1,5 +1,9 @@
-# Tic Tac Toe Game
-
+### Tic Tac Toe Game ###
+```
 Not complete, just for fun.
+```
 
-This is demo game Tictactoe with HTML/CSS and Javascript
+#### Note: ####
+```
+This is demo game Tictactoe with HTML/CSS and Javascript.
+```
